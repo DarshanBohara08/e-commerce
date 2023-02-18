@@ -19,12 +19,21 @@ export const sidebarData = [
   {
     id: 3,
     name: "blog",
-    link: "/blog",
+    link: "",
+    subItem: [
+      { id: 1, link: "/blog/blog", name: "Blog" },
+      { id: 2, link: "/blog/blogDetail", name: "Blog Detail" },
+    ],
   },
   {
     id: 4,
     name: "pages",
-    link: "/paged",
+    link: "",
+    subItem: [
+      { id: 1, link: "/pages/login", name: "Login" },
+      { id: 2, link: "/pages/register", name: "Register" },
+      { id: 3, link: "/pages/tracking", name: "Tracking" },
+    ],
   },
   {
     id: 5,
