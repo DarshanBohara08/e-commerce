@@ -7,7 +7,7 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <div className="bg-bgColor text-white px-4 py-6 flex flex-col gap-4 lg:flex-row lg:justify-between">
+    <div className="bg-bgColor text-white lg:px-12 px-4 py-6 flex flex-col gap-4 lg:flex-row lg:justify-between">
       <div className="flex flex-col gap-2 ">
         <h4 className="text-lg font-semibold">Quick Link</h4>
         <div className="flex flex-col gap-2 ">

@@ -7,7 +7,7 @@ export const sidebarData = [
   {
     id: 2,
     name: "shop",
-    link: "",
+    link: "/shop",
     subItem: [
       { id: 1, link: "/shop/shopCategory", name: "Shop Category" },
       { id: 2, link: "/shop/productDetail", name: "Product Details" },

@@ -75,8 +75,8 @@ export const Navbar = () => {
           </Drawer>
         </div>
       </div>
-      <div className=" hidden lg:flex w-full">
-        <div className="flex flex-row items-center p-4">
+      <div className=" hidden lg:flex w-full px-8">
+        <div className="flex flex-row w-full gap-32 items-center p-4">
           <div>
             <picture>
               <img
@@ -85,7 +85,7 @@ export const Navbar = () => {
               />
             </picture>
           </div>
-          <div className="flex flex-row gap-3">
+          <div className="flex flex-row gap-16">
             {sidebarData.map((i) => {
               return (
                 <>

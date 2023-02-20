@@ -19,6 +19,12 @@ export const MenuItem = ({
 }) => {
   const [showDropDown, setShowDropDown] = useState(false);
   const route = useRouter();
+  const pathName = route.pathname;
+  console.log(pathName);
+  let position = "relative";
+  if (pathName === "/shop") {
+    position = "top-12 left-20 bg-red-600";
+  }
   const isActive = (url: string) => {
     const pathName = route.pathname;
     if (pathName === url) {
@@ -27,6 +33,7 @@ export const MenuItem = ({
       return "text-font  hover:text-primary";
     }
   };
+
   return (
     <>
       {subItem ? (
@@ -46,7 +53,15 @@ export const MenuItem = ({
               />
             )}
           </div>
-          {showDropDown && <DropDown isActive={isActive} subItem={subItem} />}
+          <div className="lg:absolute ">
+            {showDropDown && (
+              <DropDown
+                pathName={position}
+                isActive={isActive}
+                subItem={subItem}
+              />
+            )}
+          </div>
         </>
       ) : (
         <div key={id}>
